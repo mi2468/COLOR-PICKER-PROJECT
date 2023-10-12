@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR PICKER USING JAVASCRIPT</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>COLOR PICKER:</h1>
+        <div class="colorbox">
+            <label>Color<span class="colon">:</span></label>
+            <input type="color" id="color">
+            <br>
+            <label>Hex Code<span class="colon2">:</span></label>
+            <input type="text" id="hex" readonly="readonly">
+        </div>
+        <div class="font">
+            <button id="btn">Bold</button>
+            <button id="btn1">Italic</button>
+            <button id="btn2">Underline</button>
+        </div>
+        <div class="font-size">
+            <label class="fs">Font-Size:</label>
+            <input type="range" id="theRange" min="0" max="100" value="0" oninput="document.getElementById('fontsize').innerHTML = this.value + 'px'; changeFontSize(this.value);">
+            <span id="fontsize">0px</span>
+        </div>
+        <div class="notepad" contenteditable="true">
+            <textarea  id="txt"  rows="10" cols="30" placeholder="Enter your Notes"></textarea>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

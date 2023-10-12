@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --headings-font-family: 'Montserrat', sans-serif;
+    --body-font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(247, 45, 253, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    height: 90vh;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    padding: 9px;
+    overflow: hidden;
+}
+
+.container div {
+    font-family: var(--body-font-family);
+}
+
+h1 {
+    font-family: var(--headings-font-family);
+    text-shadow: 3px 4px 5px rgba(38, 0, 0, 0.58);
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.colorbox {
+    background-color: rgb(252, 251, 251);
+    padding: 7px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px 4px #ccc;
+    width: 55%;
+    display: block;
+    margin: auto;
+}
+
+.colorbox input {
+    margin-left: 7px;
+    margin-bottom: 7px;
+    outline: none;
+    border: none;
+    border: 1px solid #706e6e;
+}
+
+label {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+input[type="color"] {
+    width: 41.3%;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.colon {
+    margin-left: 49px;
+}
+
+.colon2 {
+    margin-left: 12px;
+}
+
+.font {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+button {
+    padding: 7px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #b1afaf;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: rgb(236, 87, 179);
+    color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+.font-size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="range"] {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 45vh;
+    padding: 10px;
+    font-size: 1.3rem;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.font-size span {
+    transform: translateY(-9px);
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+.fs {
+    transform: translate(-10px, -9px);
+}
+
+/* media queries */
+@media(max-width: 1100px) {
+    textarea {
+        height: 42vh;
+    }
+
+    input[type="color"] {
+        width: 51.6%;
+    }
+}
+
+@media(max-width: 1050px) {
+    textarea {
+        height: 41vh;
+    }
+
+    input[type="color"] {
+        width: 54.3%;
+    }
+}
+
+@media(max-width: 1000px) {
+    input[type="color"] {
+        width: 57.5%;
+    }
+}
+
+@media(max-width: 950px) {
+    input[type="color"] {
+        width: 60.5%;
+    }
+}
+
+@media(max-width: 900px) {
+    input[type="color"] {
+        width: 64%;
+    }
+}
+
+@media(max-width: 850px) {
+    .colorbox {
+        width: 59%;
+    }
+
+    input[type="color"] {
+        width: 63.5%;
+    }
+}
+
+@media(max-width: 800px) {
+    .colorbox {
+        width: 62%;
+    }
+
+    input[type="text"] {
+        width: 63.5%;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media(max-width: 750px) {
+    .colorbox {
+        width: 65%;
+    }
+}
+
+@media(max-width: 700px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media(max-width: 650px) {
+    .container {
+        width: 81%;
+    }
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 87%;
+    }
+}
+
+@media(max-width: 550px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media(max-width: 500px) {
+    .colorbox {
+        width: 73%;
+    }
+}
+
+@media(max-width: 450px) {
+    .colorbox {
+        width: 80%;
+    }
+}
+
+@media(max-width: 425px) {
+    .colorbox {
+        width: 86%;
+    }
+}
+
+@media(max-width: 400px) {
+    .colorbox {
+        width: 91%;
+    }
+}
+
+@media(max-width: 350px) {
+    input[type="color"] {
+        width: 57%;
+    }
+    
+    input[type="text"] {
+        width: 57%;
+    }
+}
+
+@media(max-width: 375px) {
+    .colorbox {
+        width: 97%;
+    }
+}
+
+@media(max-width: 320px) {
+    .colorbox {
+        width: 98%;
+    }
+}
+
+@media(max-width: 300px) {
+    input[type="color"] {
+        width: 50%;
+    }
+    
+    input[type="text"] {
+        width: 50%;
+    }
+}
+
+@media(max-width: 280px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        height: 90vh;
+    }
+}
+
+@media(max-width: 250px) {
+    .container {
+        height: 83vh;
+    }
+
+    .colorbox {
+        width: 99%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    input[type="color"] {
+        width: 43%;
+    }
+    
+    input[type="text"] {
+        width: 43%;
+    }
+
+    textarea {
+        height: 34vh;
+    }
+}
